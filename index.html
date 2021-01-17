@@ -47,7 +47,7 @@
 			// Open an obejct (GET/POST, PATH, 
 			// ASYN-TRUE/FALSE) 
 			xhr.open("GET", 
-"https://dummy.restapiexample.com/api/v1/employees", true); 
+"https://www.googleapis.com/blogger/v3/blogs/2711400987588424759?key=AIzaSyC9yilv5idzapEmA37akp_n-eM6NGKJQkM", true); 
 
 
 
@@ -64,7 +64,7 @@
 					str = "" 
 					for (key in obj.data) { 
 						str += 
-						`<li>${obj.data[key].employee_name}</li>`; 
+						`<li>${obj.data[key].name}</li>`; 
 					} 
 					list.innerHTML = str; 
 				} 
