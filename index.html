@@ -59,14 +59,7 @@
 					// Changing string data into JSON Object 
 					obj = JSON.parse(this.responseText); 
 
-					// Getting the ul element 
-					let list = document.getElementById("list"); 
-					str = "" 
-					for (key in obj.data) { 
-						str += 
-						`<li>${obj.data[key].name}</li>`; 
-					} 
-					list.innerHTML = str; 
+					document.getElementById("list").innerHTML = obj.name;
 				} 
 				else { 
 					console.log("File not found"); 
